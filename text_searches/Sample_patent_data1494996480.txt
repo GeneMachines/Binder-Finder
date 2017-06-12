@@ -1,0 +1,530 @@
+{
+    "kind": "customsearch#search", 
+    "url": {
+        "type": "application/json", 
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&cref={cref?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    }, 
+    "items": [
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US2904562 - Esters of testosterone and 19-nortestosterone ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US2904562 - Esters of <b>testosterone</b> and 19-nortestosterone ...", 
+            "formattedUrl": "https://www.google.com/patents/US2904562", 
+            "htmlFormattedUrl": "https://www.google.com/patents/US2904562", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:url": "https://www.google.com/patents/US2904562", 
+                        "og:site_name": "Google Books", 
+                        "title": "Patent US2904562 - Esters of testosterone and 19-nortestosterone and method for the production thereof", 
+                        "dc.type": "Patent", 
+                        "og:type": "book", 
+                        "dc.contributor": "Hogberg Knut Bertil", 
+                        "dc.date": "1958-1-20", 
+                        "dc.relation": "GB:719402", 
+                        "og:title": "Patent US2904562 - Esters of testosterone and 19-nortestosterone and method for the production thereof", 
+                        "og:image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "citation_patent_number": "US:2904562", 
+                        "dc.title": "Esters of testosterone and 19-nortestosterone and method for the production thereof"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "66", 
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvnHFRzE9NYSam3q36GHU6xywKWWsC_BWt1S3c5Rc_Do-7XA03LdQaqw", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "https://patentimages.storage.googleapis.com/thumbnails/pages/US2904562-2.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "https://www.google.com/patents/US2904562?utm_source=gb-gplus-share", 
+                        "image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "www.google.com", 
+                        "name": "Patent US2904562 - Esters of testosterone and 19-nortestosterone and method for the production thereof"
+                    }
+                ]
+            }, 
+            "snippet": "ESTERS OF TESTOSTERONE AND 19-NORTESTOS- TERONE AND METHOD \nF OR THE PRODUCTION THEREOF Egon Richard Diczfalusy, Ronninge, and\u00a0...", 
+            "htmlSnippet": "ESTERS OF <b>TESTOSTERONE</b> AND 19-NORTESTOS- TERONE AND METHOD <br>\nF OR THE PRODUCTION THEREOF Egon Richard Diczfalusy, Ronninge, and&nbsp;...", 
+            "link": "https://www.google.com/patents/US2904562"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US20130144357 - Method and device for increasing ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US20130144357 - Method and device for increasing ...", 
+            "formattedUrl": "www.google.com/patents/US20130144357", 
+            "htmlFormattedUrl": "www.google.com/patents/US20130144357", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "dc.description": "Described herein is a device and method for stimulating testosterone production in a subject. The device includes a first electrode, a second electrode, and a power source. The first electrode is configured to contact the skin in the pubic region of the subject and is electrically coupled to the power source. The second electrode is configured to contact the skin on the scrotum of the subject and is also electrically coupled to the power source. The power source is configured to deliver about 6 volts or less to the first or second electrodes. The device may further include a snug fitting undergarment for maintaining contact between the first and second electrodes and the subject's skin. The method is directed to the application of a low voltage to the testicles of a subject to stimulate the production of testosterone.", 
+                        "citation_patent_application_number": "US:13/310,852", 
+                        "og:site_name": "Google Books", 
+                        "og:url": "http://www.google.com/patents/US20130144357", 
+                        "dc.type": "Patent", 
+                        "citation_patent_publication_number": "US:20130144357:A1", 
+                        "dc.contributor": "Robert D. Forward", 
+                        "dc.date": "2011-12-5", 
+                        "dc.relation": "US:20050055067:A1", 
+                        "og:title": "Patent US20130144357 - Method and device for increasing testosterone production in a male", 
+                        "title": "Patent US20130144357 - Method and device for increasing testosterone production in a male", 
+                        "og:image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "og:type": "book", 
+                        "dc.title": "Method and device for increasing testosterone production in a male"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "68", 
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSShvR6-OJu0E_u4szLsPTeaPtePss8HoBPeRD3Q8As2IYGhilK_VoZ", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "http://patentimages.storage.googleapis.com/thumbnails/US20130144357A1/US20130144357A1-20130606-D00001.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "http://www.google.com/patents/US20130144357?utm_source=gb-gplus-share", 
+                        "image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "Described herein is a device and method for stimulating testosterone production in a subject. The device includes a first electrode, a second electrode, and a power source. The first electrode...", 
+                        "name": "Patent US20130144357 - Method and device for increasing testosterone production in a male"
+                    }
+                ]
+            }, 
+            "snippet": "Jun 6, 2013 ... Described herein is a device and method for stimulating testosterone production \nin a subject. The device includes a first electrode, a second\u00a0...", 
+            "htmlSnippet": "Jun 6, 2013 <b>...</b> Described herein is a device and method for stimulating <b>testosterone</b> production <br>\nin a subject. The device includes a first electrode, a second&nbsp;...", 
+            "link": "http://www.google.com/patents/US20130144357"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US2742485 - Method for the preparation of testosterone and ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US2742485 - Method for the preparation of <b>testosterone</b> and ...", 
+            "formattedUrl": "https://www.google.com/patents/US2742485", 
+            "htmlFormattedUrl": "https://www.google.com/patents/US2742485", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:url": "https://www.google.com/patents/US2742485", 
+                        "og:site_name": "Google Books", 
+                        "title": "Patent US2742485 - Method for the preparation of testosterone and its esters", 
+                        "dc.type": "Patent", 
+                        "og:type": "book", 
+                        "dc.contributor": "Ercoli Alberto", 
+                        "dc.date": "1954-1-15", 
+                        "dc.relation": "GB:464396", 
+                        "og:title": "Patent US2742485 - Method for the preparation of testosterone and its esters", 
+                        "og:image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "citation_patent_number": "US:2742485", 
+                        "dc.title": "Method for the preparation of testosterone and its esters"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "66", 
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDkGqy-HGG6WLUCilSvIM9cRR-xltmASO99WP5bC349UvRbnB6jc9EVg", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "https://patentimages.storage.googleapis.com/thumbnails/pages/US2742485-4.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "https://www.google.com/patents/US2742485?utm_source=gb-gplus-share", 
+                        "image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "www.google.com", 
+                        "name": "Patent US2742485 - Method for the preparation of testosterone and its esters"
+                    }
+                ]
+            }, 
+            "snippet": "The process according to the invention allows by a little variant the production in \na high yield also 'of theesters of testosterone: the solution in propyl alcohol (or\u00a0...", 
+            "htmlSnippet": "The process according to the invention allows by a little variant the production in <br>\na high yield also &#39;of theesters of <b>testosterone</b>: the solution in propyl alcohol (or&nbsp;...", 
+            "link": "https://www.google.com/patents/US2742485"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US20130295166 - Testosterone formulations - Google Patents", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US20130295166 - <b>Testosterone</b> formulations - Google Patents", 
+            "formattedUrl": "www.google.com/patents/US20130295166", 
+            "htmlFormattedUrl": "www.google.com/patents/US20130295166", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "dc.description": "The subject invention provides improved testosterone gel formulations.", 
+                        "citation_patent_application_number": "US:13/979,881", 
+                        "og:site_name": "Google Books", 
+                        "og:url": "http://www.google.com/patents/US20130295166", 
+                        "dc.type": "Patent", 
+                        "citation_patent_publication_number": "US:20130295166:A1", 
+                        "dc.contributor": "Arnaud Grenier", 
+                        "dc.date": "2012-1-18", 
+                        "dc.relation": "US:20050042268:A1", 
+                        "og:title": "Patent US20130295166 - Testosterone formulations", 
+                        "title": "Patent US20130295166 - Testosterone formulations", 
+                        "og:image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "og:type": "book", 
+                        "dc.title": "Testosterone formulations"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "72", 
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8dBTwy3PjCZSyf0Q15w3bow-a06_k8tMtgWFP7A37rC2GS0tcv2Ba", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "http://patentimages.storage.googleapis.com/thumbnails/US20130295166A1/US20130295166A1-20131107-D00005.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "http://www.google.com/patents/US20130295166?utm_source=gb-gplus-share", 
+                        "image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "The subject invention provides improved testosterone gel formulations....", 
+                        "name": "Patent US20130295166 - Testosterone formulations"
+                    }
+                ]
+            }, 
+            "snippet": "Nov 7, 2013 ... The subject invention provides improved testosterone gel formulations.", 
+            "htmlSnippet": "Nov 7, 2013 <b>...</b> The subject invention provides improved <b>testosterone</b> gel formulations.", 
+            "link": "http://www.google.com/patents/US20130295166"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US2109400 - Esters of testosterone and process of making ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US2109400 - Esters of <b>testosterone</b> and process of making ...", 
+            "formattedUrl": "https://www.google.com/patents/US2109400", 
+            "htmlFormattedUrl": "https://www.google.com/patents/US2109400", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:url": "https://www.google.com/patents/US2109400", 
+                        "og:site_name": "Google Books", 
+                        "title": "Patent US2109400 - Esters of testosterone and process of making same", 
+                        "dc.type": "Patent", 
+                        "og:type": "book", 
+                        "dc.contributor": "Wettstein Albert", 
+                        "dc.date": "1936-9-8", 
+                        "og:title": "Patent US2109400 - Esters of testosterone and process of making same", 
+                        "og:image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "citation_patent_number": "US:2109400", 
+                        "dc.title": "Esters of testosterone and process of making same"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "66", 
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_U7FCAgKSGlAJCg1OC_9kdo3AduNmArF22l24ZicK-6cvycb__9KU", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "https://patentimages.storage.googleapis.com/thumbnails/pages/US2109400-2.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "https://www.google.com/patents/US2109400?utm_source=gb-gplus-share", 
+                        "image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "www.google.com", 
+                        "name": "Patent US2109400 - Esters of testosterone and process of making same"
+                    }
+                ]
+            }, 
+            "snippet": "Patented Feb. 22, 1938 UNITED STATES ESTERS 0F TESTOSTERONE AND \nPROCESS OF MAKING SAME Karl Miescher, Riehen, near Basel, and Albert\u00a0...", 
+            "htmlSnippet": "Patented Feb. 22, 1938 UNITED STATES ESTERS 0F <b>TESTOSTERONE</b> AND <br>\nPROCESS OF MAKING SAME Karl Miescher, Riehen, near Basel, and Albert&nbsp;...", 
+            "link": "https://www.google.com/patents/US2109400"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US7718640 - Methods and pharmaceutical compositions for ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US7718640 - Methods and pharmaceutical compositions for ...", 
+            "formattedUrl": "www.google.com/patents/US7718640", 
+            "htmlFormattedUrl": "www.google.com/patents/US7718640", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "dc.description": "The present invention relates to pharmaceutical compositions, formulated for injectable administration, which comprises a testosterone ester, in particularly testosterone undecanoate, in a vehicle comprising castor oil and a co-solvent. Upon injecting the compositions according to a particular administration scheme, reliable levels of testosterone in serum in the normal physiological range is achieved for a long period. This allows for the use of the compositions in hormone replacement therapy and male contraception without concomitant monitoring of testosterone levels in serum by a physician.", 
+                        "dc.type": "Patent", 
+                        "dc.contributor": "Doris Hubler", 
+                        "dc.date": "2004-3-12", 
+                        "dc.relation": "DE:2548413:A1", 
+                        "citation_reference": "\"Le Manuel Merck De Diagnostic Et Therapeutique\", Merck Res. Labs., 1999, pp. 2352-2356, XP-002305717.", 
+                        "dc.title": "Methods and pharmaceutical compositions for reliable achievement of acceptable serum testosterone levels"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "73", 
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmZH6bAWyeH0JP1gwJToNcD6moOZWsxuFRyA4n8EfHWS1V6yv4-qat", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "http://patentimages.storage.googleapis.com/thumbnails/US7718640B2/US07718640-20100518-D00001.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "http://www.google.com/patents/US7718640?utm_source=gb-gplus-share", 
+                        "image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "The present invention relates to pharmaceutical compositions, formulated for injectable administration, which comprises a testosterone ester, in particularly testosterone undecanoate, in a...", 
+                        "name": "Patent US7718640 - Methods and pharmaceutical compositions for reliable achievement of acceptable serum testosterone levels"
+                    }
+                ]
+            }, 
+            "snippet": "May 18, 2010 ... The present invention relates to pharmaceutical compositions, formulated for \ninjectable administration, which comprises a testosterone ester,\u00a0...", 
+            "htmlSnippet": "May 18, 2010 <b>...</b> The present invention relates to pharmaceutical compositions, formulated for <br>\ninjectable administration, which comprises a <b>testosterone</b> ester,&nbsp;...", 
+            "link": "http://www.google.com/patents/US7718640"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US8754070 - Testosterone gel and method of use - Google ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US8754070 - <b>Testosterone</b> gel and method of use - Google ...", 
+            "formattedUrl": "www.google.com/patents/US8754070", 
+            "htmlFormattedUrl": "www.google.com/patents/US8754070", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "dc.description": "The present invention relates to an improved transdermal hydroalcoholic testosterone gel formulation that provides, among other things, a desirable pharmacokinetic hormone profile, and methods of use.", 
+                        "dc.type": "Patent", 
+                        "dc.contributor": "Ramana Malladi", 
+                        "dc.date": "2013-3-14", 
+                        "dc.relation": "AU:4998490", 
+                        "dc.title": "Testosterone gel and method of use"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "125", 
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuPLXyDGDVt9zCSIJN16JnkZf5vSn5-tr8wZLFEh3Wi07gDn2UVtf3JQ", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "http://patentimages.storage.googleapis.com/thumbnails/US8754070B2/US08754070-20140617-D00006.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "http://www.google.com/patents/US8754070?utm_source=gb-gplus-share", 
+                        "image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "The present invention relates to an improved transdermal hydroalcoholic testosterone gel formulation that provides, among other things, a desirable pharmacokinetic hormone profile, and methods...", 
+                        "name": "Patent US8754070 - Testosterone gel and method of use"
+                    }
+                ]
+            }, 
+            "snippet": "Jun 17, 2014 ... The present invention relates to an improved transdermal hydroalcoholic \ntestosterone gel formulation that provides, among other things,\u00a0...", 
+            "htmlSnippet": "Jun 17, 2014 <b>...</b> The present invention relates to an improved transdermal hydroalcoholic <br>\n<b>testosterone</b> gel formulation that provides, among other things,&nbsp;...", 
+            "link": "http://www.google.com/patents/US8754070"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US2918482 - Process of producing cis-testosterone - Google ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US2918482 - Process of producing cis-<b>testosterone</b> - Google ...", 
+            "formattedUrl": "https://www.google.com/patents/US2918482", 
+            "htmlFormattedUrl": "https://www.google.com/patents/US2918482", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:url": "https://www.google.com/patents/US2918482", 
+                        "og:site_name": "Google Books", 
+                        "title": "Patent US2918482 - Process of producing cis-testosterone", 
+                        "dc.type": "Patent", 
+                        "og:type": "book", 
+                        "dc.contributor": "Allais Andre", 
+                        "dc.date": "1957-7-9", 
+                        "dc.relation": "US:2835681", 
+                        "og:title": "Patent US2918482 - Process of producing cis-testosterone", 
+                        "og:image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "citation_patent_number": "US:2918482", 
+                        "dc.title": "Process of producing cis-testosterone"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "66", 
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ0GZAQl5YhUloVMqq-0rNzIEB9lhIZhjbcHnFYcf_CA8GCIFbvySQ", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "https://patentimages.storage.googleapis.com/thumbnails/pages/US2918482-1.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "https://www.google.com/patents/US2918482?utm_source=gb-gplus-share", 
+                        "image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "www.google.com", 
+                        "name": "Patent US2918482 - Process of producing cis-testosterone"
+                    }
+                ]
+            }, 
+            "snippet": "United States Patent 2,918,482 PROCESS OF PRODUCING CIS-\nTESTOSTERONE Andr Allais, Paris, and Charles Holfmann, Noisy Le Grand, \nFrance,\u00a0...", 
+            "htmlSnippet": "United States Patent 2,918,482 PROCESS OF PRODUCING CIS-<br>\n<b>TESTOSTERONE</b> Andr Allais, Paris, and Charles Holfmann, Noisy Le Grand, <br>\nFrance,&nbsp;...", 
+            "link": "https://www.google.com/patents/US2918482"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US2826593 - 10-undecenoate of testosterone - Google Patents", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US2826593 - 10-undecenoate of <b>testosterone</b> - Google Patents", 
+            "formattedUrl": "https://www.google.com/patents/US2826593", 
+            "htmlFormattedUrl": "https://www.google.com/patents/US2826593", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:url": "https://www.google.com/patents/US2826593", 
+                        "og:image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "og:site_name": "Google Books", 
+                        "title": "Patent US2826593 - 10-undecenoate of testosterone", 
+                        "dc.type": "Patent", 
+                        "og:type": "book", 
+                        "dc.contributor": "Batres Enrique", 
+                        "dc.date": "1957-9-5", 
+                        "og:title": "Patent US2826593 - 10-undecenoate of testosterone", 
+                        "dc.title": "10-undecenoate of testosterone", 
+                        "citation_patent_number": "US:2826593", 
+                        "citation_reference": "None"
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "66", 
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGsXz8FOQG08bdYTueVUcQoozOvz0oZi1Wj10Gz9Dq05fgs9A-MDn", 
+                        "height": "96"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "https://patentimages.storage.googleapis.com/thumbnails/pages/US2826593.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "https://www.google.com/patents/US2826593?utm_source=gb-gplus-share", 
+                        "image": "https://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "www.google.com", 
+                        "name": "Patent US2826593 - 10-undecenoate of testosterone"
+                    }
+                ]
+            }, 
+            "snippet": "United States Patent 10-UNDECENOATE OF TESTOSTERONE George \nRosenkranz and Enrique Batres, Mexico City, Mexico, assignors to Syntex S. A., \nMexico\u00a0...", 
+            "htmlSnippet": "United States Patent 10-UNDECENOATE OF <b>TESTOSTERONE</b> George <br>\nRosenkranz and Enrique Batres, Mexico City, Mexico, assignors to Syntex S. A., <br>\nMexico&nbsp;...", 
+            "link": "https://www.google.com/patents/US2826593"
+        }, 
+        {
+            "kind": "customsearch#result", 
+            "title": "Patent US20140371189 - Testosterone replacement therapy in ...", 
+            "displayLink": "www.google.com", 
+            "htmlTitle": "Patent US20140371189 - <b>Testosterone</b> replacement therapy in ...", 
+            "formattedUrl": "www.google.com/patents/US20140371189", 
+            "htmlFormattedUrl": "www.google.com/patents/US20140371189", 
+            "pagemap": {
+                "metatags": [
+                    {
+                        "og:image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "dc.description": "A method of treating an animal which does not naturally produce sufficient quantities of testosterone includes periodically administering a testosterone to the animal. The method includes conducting an initial examination of the animal; determining a testosterone level of the animal; administering a testosterone to the animal; determining the testosterone level of the animal to which the testosterone has been administered; and periodically administering the testosterone to the animal and monitoring the testosterone level, based on the detected testosterone levels and clinical signs.", 
+                        "citation_patent_application_number": "US:14/188,266", 
+                        "og:site_name": "Google Books", 
+                        "og:url": "http://www.google.com/patents/US20140371189", 
+                        "dc.type": "Patent", 
+                        "citation_patent_publication_number": "US:20140371189:A1", 
+                        "dc.contributor": "David Bieber", 
+                        "dc.date": "2014-2-24", 
+                        "og:title": "Patent US20140371189 - Testosterone replacement therapy in animals, including dogs", 
+                        "title": "Patent US20140371189 - Testosterone replacement therapy in animals, including dogs", 
+                        "dc.title": "Testosterone replacement therapy in animals, including dogs", 
+                        "og:type": "book", 
+                        "citation_reference": "ASPCA (Healthy Dogs. Canine Hip Dysplasia. Hip Dysplasia in Dogs. http://pets.webmd.com/dogs/canine-hip-dysplasia. Accessed 12/28/2015: pp. 1-3)."
+                    }
+                ], 
+                "cse_thumbnail": [
+                    {
+                        "width": "156", 
+                        "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSodWCRjlJJ-BZ0TrYkjNqEVMvghXWrmQ3UyMweN2YDXsPbIeKu1bMZCmA", 
+                        "height": "324"
+                    }
+                ], 
+                "cse_image": [
+                    {
+                        "src": "http://patentimages.storage.googleapis.com/US20140371189A1/US20140371189A1-20141218-C00002.png"
+                    }
+                ], 
+                "book": [
+                    {
+                        "url": "http://www.google.com/patents/US20140371189?utm_source=gb-gplus-share", 
+                        "image": "http://www.google.com/patents?id=&printsec=frontcover&img=1&zoom=1", 
+                        "description": "A method of treating an animal which does not naturally produce sufficient quantities of testosterone includes periodically administering a testosterone to the animal. The method includes conductin...", 
+                        "name": "Patent US20140371189 - Testosterone replacement therapy in animals, including dogs"
+                    }
+                ]
+            }, 
+            "snippet": "Dec 18, 2014 ... A method of treating an animal which does not naturally produce sufficient \nquantities of testosterone includes periodically administering a\u00a0...", 
+            "htmlSnippet": "Dec 18, 2014 <b>...</b> A method of treating an animal which does not naturally produce sufficient <br>\nquantities of <b>testosterone</b> includes periodically administering a&nbsp;...", 
+            "link": "http://www.google.com/patents/US20140371189"
+        }
+    ], 
+    "context": {
+        "title": "Jake's Google Patents"
+    }, 
+    "queries": {
+        "request": [
+            {
+                "count": 10, 
+                "outputEncoding": "utf8", 
+                "title": "Google Custom Search - testosterone) site:www.google.com/patents/", 
+                "safe": "off", 
+                "searchTerms": "testosterone) site:www.google.com/patents/", 
+                "startIndex": 1, 
+                "cx": "004729200286861094334:pr-szpcgj0s", 
+                "inputEncoding": "utf8", 
+                "totalResults": "922000"
+            }
+        ], 
+        "nextPage": [
+            {
+                "count": 10, 
+                "outputEncoding": "utf8", 
+                "title": "Google Custom Search - testosterone) site:www.google.com/patents/", 
+                "safe": "off", 
+                "searchTerms": "testosterone) site:www.google.com/patents/", 
+                "startIndex": 11, 
+                "cx": "004729200286861094334:pr-szpcgj0s", 
+                "inputEncoding": "utf8", 
+                "totalResults": "922000"
+            }
+        ]
+    }, 
+    "searchInformation": {
+        "formattedSearchTime": "0.72", 
+        "formattedTotalResults": "922,000", 
+        "totalResults": "922000", 
+        "searchTime": 0.720093
+    }
+}
