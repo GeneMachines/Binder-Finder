@@ -1,10 +1,9 @@
 #!/usr/bin/python
 
 import requests
-#import urllib
-#import time
-#import json
 from pprint import pprint
+from .pop_search_table import patent_table_pop
+
 
 def build_query_string(query_string, num_results='10000'):
     """
@@ -24,38 +23,29 @@ def query_patentview(query_string, url, verbose=False):
     """
     Takes a query url and returns a list of patent results.
     """
-
-    # query patent view
-    response = requests.get(url)
+    
+    response = requests.get(url) # query patent view
 
     # number of hits
     if verbose:
         print ("Number of hits for '{}': ".format(query_string), response.json()['count'])
 
-    patent_ids = {}
-    for i, entry in enumerate(response.json()["patents"]):
-        if verbose and i < 5:
-            pprint(entry)
-        patent_ids[entry["patent_number"]] = entry
-
-    return patent_ids
+    return response
 
 
-def format_results(search_results):
+def search_patentview(query_string, verbose=False):
     """
-    Takes the results of the patentview query and formats them for comparison with the domain
-    information.
+    The main function of the search script. Takes a query string and returns a search response.
     """
-    pass
 
-
-def main():
-    query_string = "tnf"
     url = build_query_string(query_string)
-    search_patents = query_patentview(query_string, url, verbose=False)
+    response = query_patentview(query_string, url, verbose)
     
-    return search_patents
+    return response
 
 
 if __name__ == "__main__":
-    main()
+    query_string = "tnf"
+    response = search_patentview(query_string, True)
+    
+    return response

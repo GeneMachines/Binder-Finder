@@ -17,18 +17,19 @@ def init_database():
     conn = sqlite3.connect(sqlite_file)
     c = conn.cursor()
 
+
+    # creating tuple for string generation
+    t = (table_name1, new_field1, text_type, new_field2, text_type,
+         new_field3, text_type)
     # Creating a new SQLite table with 1 column
-    c.execute('CREATE TABLE {tn} ({nf1} {ft1} PRIMARY KEY, {nf2} {ft2}, {nf3} {ft3})'\
-                  .format(tn=table_name1, 
-                          nf1=new_field1, ft1=text_type, 
-                          nf2=new_field2, ft2=text_type, 
-                          nf3=new_field3, ft3=text_type))
+    c.execute('CREATE TABLE ? '
+              '(? ? PRIMARY KEY, ? ?, ? ?)', t)
 
     # Creating a second table with 1 column and set it as PRIMARY KEY
     # note that PRIMARY KEY column must consist of unique values!
-    c.execute('CREATE TABLE {tn} ({nf1} {ft1} PRIMARY KEY, {nf2} {ft2})'\
-                  .format(tn=table_name2, nf1=new_field4, ft1=text_type,
-                          nf2=new_field1, ft2=text_type))
+    t2 = (table_name2, new_field4, text_type,
+          new_field1, text_type)
+    c.execute('CREATE TABLE ? (? ? PRIMARY KEY, ? ?)', t2)
 
     # Committing changes and closing the connection to the database file
     conn.commit()

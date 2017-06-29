@@ -2,20 +2,6 @@ import sqlite3
 from Bio import SeqIO
 
 
-def patent_table_pop(patent_search_results):
-    """
-    Populates a table with the results from the patentview text search.
-    """
-
-    for patent in patent_search_results:
-        t = (pat_id, pat_title, pat_desc)
-        try:
-            c.execute("INSERT INTO patent_table (pat_id, pat_title, pat_desc)" 
-                      "VALUES (?,?,?)", t)
-        except sqlite3.IntegrityError:
-            print('ERROR: ID already exists in PRIMARY KEY column {}'.format(id_column))
-
-
 def seq_table_pop(fasta_file):
     """
     Populates the sql database seq table with embl ids and sequences.
@@ -38,34 +24,37 @@ def embl_table_pop(embl_domain):
     """
     Populates the sql embl table with embl ids, pfam numbers and a unique id.
     """
-    for line in embl_domain:
+    for i, line in enumerate(embl_domain):
         # do work on line to get values
-        t = tuple(line.split(","))
+        t = tuple([i]+line.split(","))
         try:
             c.execute("INSERT INTO domain_table (domain_id, embl_id, pfam)" 
                       "VALUES (?,?,?)", t)
         except sqlite3.IntegrityError:
-            print('ERROR: ID already exists in PRIMARY KEY column {}'.format(id_column))
+            print('ERROR: ID already exists in PRIMARY KEY column embl_ids')
 
 
 def main():
     """
     Decides what to do depending on input. 
     """
+    pass
 
 
 if __name__ == '__main__':
-    sqlite_file = 'foobar.sqlite'
+    sqlite_file = '/Users/j.parker/working_dir/filter_binders/database/foobar.sqlite'
 
     # Connecting to the database file
     conn = sqlite3.connect(sqlite_file)
     c = conn.cursor()
     
     #seq_table_pop('/Users/j.parker/data/databases/patent_data/nrp_patent_nospace.fa')
+    
+    embl_table_pop(open("/Users/j.parker/working_dir/filter_binders/test/embl_ids.test", "r"))
 
     # do search
     # populate search table / select patents based on results
-    # do join operations
+    e# do join operations
     # return results
 
     conn.commit()
