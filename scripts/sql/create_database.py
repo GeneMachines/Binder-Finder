@@ -10,7 +10,7 @@ new_field3 = 'pat_desc' # name of the column
 new_field4 = 'embl_id' # name of the column
 
 text_type = 'TEXT'  # column data type
-int_type = 'INT' 
+int_type = 'INTEGER' 
 
 def init_database():
     # Connecting to the database file

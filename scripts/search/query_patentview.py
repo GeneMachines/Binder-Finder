@@ -1,9 +1,4 @@
-#!/usr/bin/python
-
 import requests
-from pprint import pprint
-from .pop_search_table import patent_table_pop
-
 
 def build_query_string(query_string, num_results='10000'):
     """
@@ -14,7 +9,7 @@ def build_query_string(query_string, num_results='10000'):
     domain = 'http://www.patentsview.org/api/patents/'
     query = 'query?q={"_text_any":{"patent_abstract":"%s"}}' % (query_string)
     options = '&o={"page":1,"per_page":%s}' % (num_results)
-    form = '&f=["patent_number","patent_date","patent_title"]'
+    form = '&f=["patent_number","patent_abstract","patent_title"]'
 
     return (domain + query + options + form)
 
@@ -47,5 +42,3 @@ def search_patentview(query_string, verbose=False):
 if __name__ == "__main__":
     query_string = "tnf"
     response = search_patentview(query_string, True)
-    
-    return response
