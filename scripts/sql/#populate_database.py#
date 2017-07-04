@@ -6,16 +6,13 @@ def seq_table_pop(fasta_file):
     """
     Populates the sql database seq table with embl ids and sequences.
     """
-    id_column = 'embl_id'
-    column_name = 'seq'
-    table_name = 'seq_table'
-    for rec in SeqIO.parse(fasta_file, "fasta"):
-        embl_id = rec.id.split(":")[1].split("|")[0]
+
+    for rec in SeqIO.parse(fasta_file, "fasta"): # for each sequence in the fasta...
+        embl_id = rec.id.split(":")[1].split("|")[0] # ...extract the embl id
      
-   #print (embl_id)
         try:
             c.execute("INSERT INTO seq_table (embl_id, seq)" 
-                      "VALUES ((?,?)", (embl_id, rec.seq))
+                      "VALUES ((?,?)", (embl_id, rec.seq)) # and add that 
         except sqlite3.IntegrityError:
             print('ERROR: ID already exists in PRIMARY KEY column {}'.format(id_column))
 
@@ -42,7 +39,7 @@ def main():
 
 
 if __name__ == '__main__':
-    sqlite_file = '/Users/j.parker/working_dir/filter_binders/database/foobar.sqlite'
+    sqlite_file = raw_input("input path to database to populate: ")
 
     # Connecting to the database file
     conn = sqlite3.connect(sqlite_file)
@@ -50,11 +47,11 @@ if __name__ == '__main__':
     
     #seq_table_pop('/Users/j.parker/data/databases/patent_data/nrp_patent_nospace.fa')
     
-    embl_table_pop(open("/Users/j.parker/working_dir/filter_binders/test/embl_ids.test", "r"))
+#    embl_table_pop(open("/Users/j.parker/working_dir/filter_binders/test/embl_ids.test", "r"))
 
     # do search
     # populate search table / select patents based on results
-    e# do join operations
+    # do join operations
     # return results
 
     conn.commit()

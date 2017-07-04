@@ -1,0 +1,1010 @@
+ID   NRP00000001; PRT; NR2; 1 SQ
+XX
+MF   10830627
+PN   WO9954462
+PR   GB19980008350 22-APR-1998
+ED   28-OCT-1999 WO9954462 A2
+XX
+DR   EPOP:AX013047;
+DE   Sequence 74 from Patent WO9954462. 
+PN   WO9954462-A2/74, 28-OCT-1999
+XX
+FT   source          1..358
+FT                   /organism="Mycobacterium leprae"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:1769"
+XX
+SQ   Sequence 358 AA; 00001508eba3f78863a4f9cb2463810d; MD5;
+//
+ID   NRP00000002; PRT; NR2; 1 SQ
+XX
+MF   22767515
+PN   WO0190366
+PR   US20000206690P 24-MAY-2000
+ED   29-NOV-2001 WO0190366 A2
+XX
+DR   EPOP:AX312021;
+DE   Sequence 5006 from Patent WO0190366. 
+PN   WO0190366-A2/5006, 29-NOV-2001
+XX
+FT   source          1..65
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 65 AA; 0000eece8396364fe22b1bdd6821bd63; MD5;
+//
+ID   NRP00210944; PRT; NR2; 2 SQ
+XX
+MF   9921525
+PN   WO03020945
+PR   GB20010021439 05-SEP-2001
+ED   13-MAR-2003 WO03020945 A2
+XX
+DR   EPOP:AX716885;
+DE   Sequence 1 from Patent WO03020945. 
+PN   WO03020945-A2/1, 13-MAR-2003
+XX
+DR   USPOP:ABY00072;
+DE   Sequence 1 from patent US 7294486. 
+PN   US7294486-A/1, 13-NOV-2007
+PN   US2005130274 A1 16-JUN-2005
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..25
+FT                   /organism="Streptomyces cattleya"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:29303"
+XX
+SQ   Sequence 25 AA; 000114cdf14c72e3b188040f9f35f5af; MD5;
+//
+ID   NRP00210945; PRT; NR2; 1 SQ
+XX
+MF   9954057
+PN   WO2004078914
+PR   GB20030004882 04-MAR-2003
+ED   16-SEP-2004 WO2004078914 A2
+XX
+DR   EPOP:CQ871087;
+DE   Sequence 7 from Patent WO2004078914. 
+PN   WO2004078914-A2/7, 16-SEP-2004
+XX
+FT   source          1..25
+FT                   /organism="unidentified"
+FT                   /mol_type="protein"
+FT                   /note="Sequence of unknown origin"
+FT                   /db_xref="taxon:32644"
+XX
+SQ   Sequence 25 AA; 000114cdf14c72e3b188040f9f35f5af; MD5;
+//
+ID   NRP001C196C; PRT; NR2; 3 SQ
+XX
+MF   24052814
+PN   WO0164908
+PR   US20000515806 29-FEB-2000
+ED   07-SEP-2001 WO0164908 A2
+XX
+DR   EPOP:AX236122;
+DE   Sequence 13 from Patent WO0164908. 
+PN   WO0164908-A2/13, 07-SEP-2001
+XX
+DR   USPOP:AAY05077;
+DE   Sequence 12 from patent US 6864078. 
+PN   US6864078-A/12, 08-MAR-2005
+PN   US2002132321 A1 19-SEP-2002
+CC   First level of publication supplied by the EPO
+XX
+DR   USPOP:ABS90974;
+DE   Sequence 13 from patent US 7198929. 
+PN   US7198929-A/13, 03-APR-2007
+PN   US2004265967 A1 30-DEC-2004
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..504
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="Consensus kinase sequence"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 504 AA; 0002ee690d7c83ee5dbab8482094fa13; MD5;
+//
+ID   NRP001A2F9C; PRT; NR2; 2 SQ
+XX
+MF   22698746
+PN   WO0168678
+PR   US20000189781P 16-MAR-2000
+ED   20-SEP-2001 WO0168678 A2
+XX
+DR   EPOP:AX253055;
+DE   Sequence 24 from Patent WO0168678. 
+PN   WO0168678-A2/24, 20-SEP-2001
+XX
+DR   USPOP:AAR66433;
+DE   Sequence 24 from patent US 6632616. 
+PN   US6632616-A/24, 14-OCT-2003
+PN   US2002009752 A1 24-JAN-2002
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..11
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="Synthetic Peptide."
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 11 AA; 0003f75872fba84dfc2cb08f979561b9; MD5;
+//
+ID   NRP00000003; PRT; NR2; 1 SQ
+XX
+MF   10866242
+PN   WO0142276
+PR   GB19990029471 13-DEC-1999
+ED   14-JUN-2001 WO0142276 A1
+XX
+DR   EPOP:AX169627;
+DE   Sequence 1428 from Patent WO0142276. 
+PN   WO0142276-A1/1428, 14-JUN-2001
+XX
+FT   source          1..10
+FT                   /organism="Saccharomyces cerevisiae"
+FT                   /mol_type="protein"
+FT                   /note="Sequence located in YFR054C at 38-47 and may
+FT                   interact with Sequence 1427 in this patent."
+FT                   /db_xref="taxon:4932"
+XX
+SQ   Sequence 10 AA; 000607406627502583c9c7bef3d64ffb; MD5;
+//
+ID   NRP00010323; PRT; NR2; 1 SQ
+XX
+MF   26246032
+PN   WO02090991
+PR   GB20010010886 03-MAY-2001
+ED   14-NOV-2002 WO02090991 A2
+XX
+DR   EPOP:AX597214;
+DE   Sequence 72 from Patent WO02090991. 
+PN   WO02090991-A2/72, 14-NOV-2002
+XX
+FT   source          1..10
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 10 AA; 0006afca1ad85632cfc6a9497977a4f7; MD5;
+//
+ID   NRP00010324; PRT; NR2; 1 SQ
+XX
+MF   28676384
+PN   WO03083482
+PR   US20020368970P 02-APR-2002
+ED   09-OCT-2003 WO03083482 A1
+XX
+DR   EPOP:AX925780;
+DE   Sequence 1 from Patent WO03083482. 
+PN   WO03083482-A1/1, 09-OCT-2003
+XX
+FT   source          1..813
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 813 AA; 0007e40322b15f6f9e873b4275ed2137; MD5;
+//
+ID   NRP00010325; PRT; NR2; 1 SQ
+XX
+MF   28046962
+PN   WO03078566
+PR   US20020365173P 19-MAR-2002
+ED   25-SEP-2003 WO03078566 A2
+XX
+DR   EPOP:AX840307;
+DE   Sequence 2 from Patent WO03078566. 
+PN   WO03078566-A2/2, 25-SEP-2003
+XX
+FT   source          1..313
+FT                   /organism="Tetrahymena thermophila"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:5911"
+XX
+SQ   Sequence 313 AA; 0007ee57a0dd176f4e380879652ed802; MD5;
+//
+ID   NRP001A2FB3; PRT; NR2; 3 SQ
+XX
+MF   22687720
+PN   WO0166565
+PR   US20000187130P 06-MAR-2000
+ED   13-SEP-2001 WO0166565 A2
+XX
+DR   EPOP:AX249800;
+DE   Sequence 8 from Patent WO0166565. 
+PN   WO0166565-A2/8, 13-SEP-2001
+XX
+DR   USPOP:ABJ39141;
+DE   Sequence 8 from patent US 7105341. 
+PN   US7105341-A/8, 12-SEP-2006
+PN   US2005233456 A1 20-OCT-2005
+CC   First level of publication supplied by the EPO
+XX
+DR   USPOP:ABT00979;
+DE   Sequence 8 from patent US 7208571. 
+PN   US7208571-A/8, 24-APR-2007
+PN   US2005158820 A1 21-JUL-2005
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..456
+FT                   /organism="Saccharomyces cerevisiae"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:4932"
+XX
+SQ   Sequence 456 AA; 000994f7236bba862aabf07fee307dfb; MD5;
+//
+ID   NRP001A2FB4; PRT; NR2; 1 SQ
+XX
+MF   25177653
+PN   US6481667
+PR   US20010800170 05-MAR-2001
+ED   19-NOV-2002 US6481667 B1
+XX
+DR   USPOP:AAN98933;
+DE   Sequence 8 from patent US 6481667. 
+PN   US6481667-A/8, 19-NOV-2002
+PN   US6481667-B1/8, 19-NOV-2002
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..456
+XX
+SQ   Sequence 456 AA; 000994f7236bba862aabf07fee307dfb; MD5;
+//
+ID   NRP0042B755; PRT; NR2; 1 SQ
+XX
+MF   46205495
+PN   US7378248
+PR   US20000187130P 06-MAR-2000
+ED   24-NOV-2005 US2005260626 A1
+XX
+DR   USPOP:ACE42365;
+DE   Sequence 8 from patent US 7378248. 
+PN   US7378248-A/8, 27-MAY-2008
+PN   US2005260626 A1 24-NOV-2005
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..456
+XX
+SQ   Sequence 456 AA; 000994f7236bba862aabf07fee307dfb; MD5;
+//
+ID   NRP001C1975; PRT; NR2; 2 SQ
+XX
+MF   22752769
+PN   WO0185961
+PR   US20000203162P 09-MAY-2000
+ED   15-NOV-2001 WO0185961 A2
+XX
+DR   EPOP:AX300655;
+DE   Sequence 63 from Patent WO0185961. 
+PN   WO0185961-A2/63, 15-NOV-2001
+XX
+DR   USPOP:AAW90944;
+DE   Sequence 63 from patent US 6833248. 
+PN   US6833248-A/63, 21-DEC-2004
+PN   US2003165488 A1 04-SEP-2003
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..163
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 163 AA; 0009b3e4365762149aba6e4cf65d7851; MD5;
+//
+ID   NRP0001032A; PRT; NR2; 2 SQ
+XX
+MF   8862732
+PN   WO02092818
+PR   FR20010005642 26-APR-2001
+ED   21-NOV-2002 WO02092818 A2
+XX
+DR   EPOP:AX603168;
+DE   Sequence 1097 from Patent WO02092818. 
+PN   WO02092818-A2/1097, 21-NOV-2002
+XX
+DR   EPOP:AX605308;
+DE   Sequence 3237 from Patent WO02092818. 
+PN   WO02092818-A2/3237, 21-NOV-2002
+XX
+FT   source          1..471
+FT                   /organism="Streptococcus agalactiae"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:1311"
+XX
+SQ   Sequence 471 AA; 000a02c5e441b052d04fa62673903b31; MD5;
+//
+ID   NRP001A2FB7; PRT; NR2; 2 SQ
+XX
+MF   23756471
+PN   WO0136481
+PR   US19990442349 17-NOV-1999
+ED   25-MAY-2001 WO0136481 A1
+XX
+DR   EPOP:AX147114;
+DE   Sequence 72 from Patent WO0136481. 
+PN   WO0136481-A1/72, 25-MAY-2001
+XX
+DR   USPOP:AAN93790;
+DE   Sequence 72 from patent US 6462178. 
+PN   US6462178-A/72, 08-OCT-2002
+PN   US6462178-B1/72, 08-OCT-2002
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..374
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="G protein chimera"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 374 AA; 000a226dc676efd6c3e1c791725b267a; MD5;
+//
+ID   NRP001D715D; PRT; NR2; 2 SQ
+XX
+MF   22907098
+PN   WO0233089
+PR   US20000240575P 05-OCT-2000
+ED   25-APR-2002 WO0233089 A2
+XX
+DR   EPOP:AX504539;
+DE   Sequence 175 from Patent WO0233089. 
+PN   WO0233089-A2/175, 25-APR-2002
+XX
+DR   USPOP:ABI06650;
+DE   Sequence 175 from patent US 7078508. 
+PN   US7078508-A/175, 18-JUL-2006
+PN   US2004018516 A1 29-JAN-2004
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..39
+FT                   /organism="Ixodes scapularis"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:6945"
+XX
+SQ   Sequence 39 AA; 000a275bc870de13ec4baac22aaa841b; MD5;
+//
+ID   NRP00000004; PRT; NR2; 1 SQ
+XX
+MF   22767515
+PN   WO0190366
+PR   US20000206690P 24-MAY-2000
+ED   29-NOV-2001 WO0190366 A2
+XX
+DR   EPOP:AX310537;
+DE   Sequence 3522 from Patent WO0190366. 
+PN   WO0190366-A2/3522, 29-NOV-2001
+XX
+FT   source          1..125
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 125 AA; 000a9be5fd3a28832ca30dde22c85ec1; MD5;
+//
+ID   NRP00000005; PRT; NR2; 1 SQ
+XX
+MF   26883103
+PN   WO0166752
+PR   US20000187518P 07-MAR-2000
+ED   13-SEP-2001 WO0166752 A2
+XX
+DR   EPOP:AX247753;
+DE   Sequence 84 from Patent WO0166752. 
+PN   WO0166752-A2/84, 13-SEP-2001
+XX
+FT   source          1..449
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 449 AA; 000adabe841ea625b6866f64bffbef9a; MD5;
+//
+ID   NRP00340332; PRT; NR2; 1 SQ
+XX
+MF   38997596
+PN   EP2052088
+PR   WO2006US30281 02-AUG-2006
+ED   29-APR-2009 EP2052088 A2
+XX
+DR   EPOP:HI160825;
+DE   Sequence 23294 from Patent EP2052088. 
+PN   EP2052088-A2/23294, 29-APR-2009
+XX
+FT   source          1..449
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 449 AA; 000adabe841ea625b6866f64bffbef9a; MD5;
+//
+ID   NRP0001032C; PRT; NR2; 1 SQ
+XX
+MF   22984381
+PN   WO02066501
+PR   US20010259302P 02-JAN-2001
+ED   29-AUG-2002 WO02066501 A2
+XX
+DR   EPOP:AX790024;
+DE   Sequence 2488 from Patent WO02066501. 
+PN   WO02066501-A2/2488, 29-AUG-2002
+XX
+FT   source          1..11
+FT                   /organism="Helicobacter pylori"
+FT                   /mol_type="protein"
+FT                   /note="Translation of SEQ ID N 2487"
+FT                   /db_xref="taxon:210"
+XX
+SQ   Sequence 11 AA; 000b7a794269883787644570492bd6dc; MD5;
+//
+ID   NRP0001032D; PRT; NR2; 1 SQ
+XX
+MF   23109081
+PN   WO02090544
+PR   US20010288885P 04-MAY-2001
+ED   14-NOV-2002 WO02090544 A2
+XX
+DR   EPOP:AX808560;
+DE   Sequence 2207 from Patent WO02090544. 
+PN   WO02090544-A2/2207, 14-NOV-2002
+XX
+FT   source          1..15
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /note="Translation of SEQ ID NO:768"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 15 AA; 000b996a424d8a5a6cae9979cde13e8b; MD5;
+//
+ID   NRP004565FA; PRT; NR2; 1 SQ
+XX
+MF   19186716
+PN   US6943241
+PR   JP20010379298 05-NOV-2001
+ED   25-DEC-2003 US2003236392 A1
+XX
+DR   USPOP:ABA68154;
+DE   Sequence 3796 from patent US 6943241. 
+PN   US6943241-A/3796, 13-SEP-2005
+PN   US2003236392 A1 25-DEC-2003
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..164
+XX
+SQ   Sequence 164 AA; 000bdf112752e15762dfb2f9c79d04b4; MD5;
+//
+ID   NRP001D7165; PRT; NR2; 1 SQ
+XX
+MF   26625029
+PN   EP1308459
+PR   JP20010379298 05-NOV-2001
+ED   07-MAY-2003 EP1308459 A2
+XX
+DR   EPOP:AX750271;
+DE   Sequence 3796 from Patent EP1308459. 
+PN   EP1308459-A2/3796, 07-MAY-2003
+XX
+FT   source          1..164
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 164 AA; 000bdf112752e15762dfb2f9c79d04b4; MD5;
+//
+ID   NRP0001032E; PRT; NR2; 1 SQ
+XX
+MF   23053586
+PN   WO02086122
+PR   US20010275734P 14-MAR-2001
+ED   31-OCT-2002 WO02086122 A2
+XX
+DR   EPOP:AX679959;
+DE   Sequence 2740 from Patent WO02086122. 
+PN   WO02086122-A2/2740, 31-OCT-2002
+XX
+FT   source          1..11
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /note="Translation of SEQ ID NO:691"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 11 AA; 000d11c270e3880baa936f8225147277; MD5;
+//
+ID   NRP00000006; PRT; NR2; 1 SQ
+XX
+MF   10866236
+PN   WO0142277
+PR   GB19990029464 13-DEC-1999
+ED   14-JUN-2001 WO0142277 A2
+XX
+DR   EPOP:AX178551;
+DE   Sequence 2934 from Patent WO0142277. 
+PN   WO0142277-A2/2934, 14-JUN-2001
+XX
+FT   source          1..10
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /note="sequence located in MSH4. at 342-351 and may
+FT                   interact with Sequence 2933 in this patent."
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 10 AA; 000dbfd8527f205534e07aa581ea7d02; MD5;
+//
+ID   NRP00000007; PRT; NR2; 1 SQ
+XX
+MF   20383068
+PN   WO9222572
+PR   SE19910001863 13-JUN-1991
+ED   23-DEC-1992 WO9222572 A1
+XX
+DR   EPOP:A33561;
+DE   Synthetic HIV-1 hxb2 gag peptide 
+PN   WO9222572-A1/41, 23-DEC-1992
+XX
+FT   source          1..20
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 20 AA; 000ec12c4946a4876b918b0f18c4b7c4; MD5;
+//
+ID   NRP00000008; PRT; NR2; 1 SQ
+XX
+MF   26272950
+PN   GB2070618
+PR   GB19790032590 20-SEP-1979
+ED   09-SEP-1981 GB2070618 A
+XX
+DR   EPOP:A34858;
+DE   Synthetic pharmaceutical peptide 
+PN   GB2070618-A/1, 09-SEP-1981
+PN   GB2070618 A 09-SEP-1981
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..5
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 5 AA; 000efa31635f064addf6bea839193a38; MD5;
+//
+ID   NRP00000009; PRT; NR2; 1 SQ
+XX
+MF   22767515
+PN   WO0190366
+PR   US20000206690P 24-MAY-2000
+ED   29-NOV-2001 WO0190366 A2
+XX
+DR   EPOP:AX308587;
+DE   Sequence 1572 from Patent WO0190366. 
+PN   WO0190366-A2/1572, 29-NOV-2001
+XX
+FT   source          1..52
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 52 AA; 000f6cc8275cd0080edb3b1e08c70414; MD5;
+//
+ID   NRP0000000D; PRT; NR2; 1 SQ
+XX
+MF   10830678
+PN   WO9954470
+PR   GB19980008423 22-APR-1998
+ED   28-OCT-1999 WO9954470 A2
+XX
+DR   EPOP:AX012897;
+DE   Sequence 37 from Patent WO9954470. 
+PN   WO9954470-A2/37, 28-OCT-1999
+XX
+FT   source          1..73
+FT                   /organism="Mycobacterium tuberculosis"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:1773"
+XX
+SQ   Sequence 73 AA; 00128cc1d18ce88a6a2ebdee6ad079c3; MD5;
+//
+ID   NRP0000000E; PRT; NR2; 2 SQ
+XX
+MF   10866236
+PN   WO0142277
+PR   GB19990029464 13-DEC-1999
+ED   14-JUN-2001 WO0142277 A2
+XX
+DR   EPOP:AX176044;
+DE   Sequence 427 from Patent WO0142277. 
+PN   WO0142277-A2/427, 14-JUN-2001
+XX
+DR   EPOP:AX176054;
+DE   Sequence 437 from Patent WO0142277. 
+PN   WO0142277-A2/437, 14-JUN-2001
+XX
+FT   source          1..10
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /note="sequence located in ANX1 OR LPC1. at 103-112 and may
+FT                   interact with Sequence 428 in this patent."
+FT                   /db_xref="taxon:9606"
+FT                   /note="sequence located in ANX1 OR LPC1. at 103-112 and may
+FT                   interact with Sequence 438 in this patent. {AX176054}"
+XX
+SQ   Sequence 10 AA; 00151364c8f5f9dfa8be693d41011120; MD5;
+//
+ID   NRP0000000F; PRT; NR2; 1 SQ
+XX
+MF   22495626
+PN   WO0100667
+PR   US19990141423P 29-JUN-1999
+ED   04-JAN-2001 WO0100667 A2
+XX
+DR   EPOP:AX062373;
+DE   Sequence 13 from Patent WO0100667. 
+PN   WO0100667-A2/13, 04-JAN-2001
+XX
+FT   source          1..73
+FT                   /organism="Anopheles gambiae"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:7165"
+XX
+SQ   Sequence 73 AA; 0015211de3b3db32f1f3d5b46a098829; MD5;
+//
+ID   NRP0001032F; PRT; NR2; 1 SQ
+XX
+MF   22988979
+PN   WO02054081
+PR   US20000260392P 29-DEC-2000
+ED   11-JUL-2002 WO02054081 A2
+XX
+DR   EPOP:AX542851;
+DE   Sequence 16 from Patent WO02054081. 
+PN   WO02054081-A2/16, 11-JUL-2002
+XX
+FT   source          1..13
+FT                   /organism="Rattus norvegicus"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:10116"
+XX
+SQ   Sequence 13 AA; 0015496e9a278571e7891d0a61c07129; MD5;
+//
+ID   NRP00000010; PRT; NR2; 1 SQ
+XX
+MF   27531368
+PN   WO0149728
+PR   JP20000000588 06-JAN-2000
+ED   12-JUL-2001 WO0149728 A2
+XX
+DR   EPOP:AX191488;
+DE   Sequence 10 from Patent WO0149728. 
+PN   WO0149728-A2/10, 12-JUL-2001
+XX
+FT   source          1..152
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 152 AA; 0015b6d86471b2ff783727da137e46ce; MD5;
+//
+ID   NRP00010330; PRT; NR2; 1 SQ
+XX
+MF   34525861
+PN   WO02061087
+PR   US20000257144P 19-DEC-2000
+ED   08-AUG-2002 WO02061087 A2
+XX
+DR   EPOP:AX550957;
+DE   Sequence 2242 from Patent WO02061087. 
+PN   WO02061087-A2/2242, 08-AUG-2002
+XX
+FT   source          1..19
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 19 AA; 0017fc6e90ec4bbf01ea5baaf2968491; MD5;
+//
+ID   NRP00000011; PRT; NR2; 1 SQ
+XX
+MF   8237017
+PN   EP0947582
+PR   EP19980870065 31-MAR-1998
+ED   06-OCT-1999 EP0947582 A1
+XX
+DR   EPOP:A94521;
+DE   Sequence 225 from Patent EP0947582. 
+PN   EP0947582-A1/225, 06-OCT-1999
+XX
+FT   source          1..7
+FT                   /organism="unidentified"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32644"
+XX
+SQ   Sequence 7 AA; 00186efadf761fc255d423d1573d3d4d; MD5;
+//
+ID   NRP00010331; PRT; NR2; 1 SQ
+XX
+MF   8865426
+PN   WO03006497
+PR   FR20010009293 12-JUL-2001
+ED   23-JAN-2003 WO03006497 A2
+XX
+DR   EPOP:AX702126;
+DE   Sequence 24 from Patent WO03006497. 
+PN   WO03006497-A2/24, 23-JAN-2003
+XX
+FT   source          1..198
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="sequence derivee par mutation de la clytine"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 198 AA; 0019b259b45f9cc44d1474abcc551eb1; MD5;
+//
+ID   NRP00000012; PRT; NR2; 1 SQ
+XX
+MF   27517569
+PN   WO0072868
+PR   US19990137227P 01-JUN-1999
+ED   07-DEC-2000 WO0072868 A2
+XX
+DR   EPOP:AX067552;
+DE   Sequence 46 from Patent WO0072868. 
+PN   WO0072868-A2/46, 07-DEC-2000
+XX
+FT   source          1..24
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="Peptides exhibiting similarity to human clara cell
+FT                   and having immunomodulatory and therapeutic properties"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 24 AA; 001bf6dd49663cca84d5de641855ecf5; MD5;
+//
+ID   NRP00000013; PRT; NR2; 1 SQ
+XX
+MF   25885036
+PN   WO9103560
+PR   DE19893930317 11-SEP-1989
+ED   21-MAR-1991 WO9103560 A1
+XX
+DR   EPOP:A22410;
+DE   E.coli 2-L-Hydroxyisocarbonicacid-Dehydrogenase enzyme 
+PN   WO9103560-A1/2, 21-MAR-1991
+XX
+FT   source          1..310
+FT                   /organism="Escherichia coli"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:562"
+XX
+SQ   Sequence 310 AA; 001c1bfa5c56b0706c800bed8b287f88; MD5;
+//
+ID   NRP001C1988; PRT; NR2; 2 SQ
+XX
+MF   26940515
+PN   WO0240672
+PR   US20000249998P 20-NOV-2000
+ED   23-MAY-2002 WO0240672 A2
+XX
+DR   EPOP:AX431050;
+DE   Sequence 130 from Patent WO0240672. 
+PN   WO0240672-A2/130, 23-MAY-2002
+XX
+DR   USPOP:AAY00801;
+DE   Sequence 130 from patent US 6855517. 
+PN   US6855517-A/130, 15-FEB-2005
+PN   US2002155464 A1 24-OCT-2002
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..37
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 37 AA; 001c401f6e456f1f23adbd3318b25bfd; MD5;
+//
+ID   NRP00000014; PRT; NR2; 1 SQ
+XX
+MF   8206486
+PN   WO9215683
+PR   EP19910103389 06-MAR-1991
+ED   17-SEP-1992 WO9215683 A1
+XX
+DR   EPOP:A27921;
+DE   Humanized monoclonal antibody FR-3 
+PN   WO9215683-A1/9, 17-SEP-1992
+XX
+FT   source          1..35
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 35 AA; 001c6eeaaed82d6aca68af1f46c5e9dd; MD5;
+//
+ID   NRP00000015; PRT; NR2; 1 SQ
+XX
+MF   10864777
+PN   WO0136980
+PR   GB19990027346 18-NOV-1999
+ED   25-MAY-2001 WO0136980 A2
+XX
+DR   EPOP:AX148438;
+DE   Sequence 40 from Patent WO0136980. 
+PN   WO0136980-A2/40, 25-MAY-2001
+XX
+FT   source          1..4
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="Peptide selected according to a fractional factorial
+FT                   design"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 4 AA; 001cb57867152e8b8da56aff157e5338; MD5;
+//
+ID   NRP001A2FDC; PRT; NR2; 2 SQ
+XX
+MF   22477539
+PN   WO0075340
+PR   US19990137461P 04-JUN-1999
+ED   14-DEC-2000 WO0075340 A2
+XX
+DR   EPOP:AX057019;
+DE   Sequence 36 from Patent WO0075340. 
+PN   WO0075340-A2/36, 14-DEC-2000
+XX
+DR   USPOP:AAQ37402;
+DE   Sequence 36 from patent US 6570063. 
+PN   US6570063-A/36, 27-MAY-2003
+PN   US6570063-B1/36, 27-MAY-2003
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..1118
+FT                   /organism="Oryza sativa"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:4530"
+XX
+SQ   Sequence 1118 AA; 001d059309cb142b69d88ae3e5b2694a; MD5;
+//
+ID   NRP001A2FDF; PRT; NR2; 1 SQ
+XX
+MF   22593682
+PN   WO0134809
+PR   US19990164258P 09-NOV-1999
+ED   17-MAY-2001 WO0134809 A2
+XX
+DR   EPOP:AX142868;
+DE   Sequence 1590 from Patent WO0134809. 
+PN   WO0134809-A2/1590, 17-MAY-2001
+XX
+FT   source          1..171
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /note="synthetic amino acid sequence"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 171 AA; 001fa14c68cdf6947fdd925d45c62ab1; MD5;
+//
+ID   NRP001A2FE0; PRT; NR2; 1 SQ
+XX
+MF   31890842
+PN   US6703492
+PR   US19990164258P 09-NOV-1999
+ED   09-MAR-2004 US6703492 B1
+XX
+DR   USPOP:AAT20227;
+DE   Sequence 1590 from patent US 6703492. 
+PN   US6703492-A/1590, 09-MAR-2004
+PN   US6703492-B1/1590, 09-MAR-2004
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..171
+XX
+SQ   Sequence 171 AA; 001fa14c68cdf6947fdd925d45c62ab1; MD5;
+//
+ID   NRP00010336; PRT; NR2; 1 SQ
+XX
+MF   27575189
+PN   WO0202637
+PR   US20000215495P 30-JUN-2000
+ED   10-JAN-2002 WO0202637 A2
+XX
+DR   EPOP:AX454216;
+DE   Sequence 35 from Patent WO0202637. 
+PN   WO0202637-A2/35, 10-JAN-2002
+XX
+FT   source          1..268
+FT                   /organism="Mus musculus"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:10090"
+XX
+SQ   Sequence 268 AA; 001fb38cb24c7ed0dcf01d9f40b20eab; MD5;
+//
+ID   NRP001D7183; PRT; NR2; 2 SQ
+XX
+MF   10813018
+PN   WO9853322
+PR   GB19970010762 23-MAY-1997
+ED   26-NOV-1998 WO9853322 A1
+XX
+DR   EPOP:A82973;
+DE   Sequence 105 from Patent WO9853322. 
+PN   WO9853322-A1/105, 26-NOV-1998
+XX
+DR   USPOP:ABE24363;
+DE   Sequence 105 from patent US 7018791. 
+PN   US7018791-A/105, 28-MAR-2006
+PN   US7018791-B1/105, 28-MAR-2006
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..15
+FT                   /organism="unidentified"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32644"
+XX
+SQ   Sequence 15 AA; 0020cd03f9bfb8f40554c69fb96d2d57; MD5;
+//
+ID   NRP001A2FE5; PRT; NR2; 1 SQ
+XX
+MF   23949124
+PN   US6560542
+PR   US20000490702 24-JAN-2000
+ED   06-MAY-2003 US6560542 B1
+XX
+DR   USPOP:AAP68148;
+DE   Sequence 40 from patent US 6560542. 
+PN   US6560542-A/40, 06-MAY-2003
+PN   US6560542-B1/40, 06-MAY-2003
+CC   Adapted Kind Code supplied by the EPO
+XX
+FT   source          1..10
+XX
+SQ   Sequence 10 AA; 00213384a6df2672fbeaf428e1a70e1e; MD5;
+//
+ID   NRP001A2FE6; PRT; NR2; 3 SQ
+XX
+MF   25079555
+PN   WO02072614
+PR   US20010767460 23-JAN-2001
+ED   24-JAN-2002 US2002009756 A1
+XX
+DR   EPOP:AX740102;
+DE   Sequence 40 from Patent WO02072614. 
+PN   WO02072614-A2/40, 19-SEP-2002
+XX
+DR   USPOP:AAY05505;
+DE   Sequence 40 from patent US 6865492. 
+PN   US6865492-A/40, 08-MAR-2005
+PN   US2002009756 A1 24-JAN-2002
+CC   First level of publication supplied by the EPO
+XX
+DR   USPOP:ABU27075;
+DE   Sequence 40 from patent US 7228238. 
+PN   US7228238-A/40, 05-JUN-2007
+PN   US2005027457 A1 03-FEB-2005
+CC   First level of publication supplied by the EPO
+XX
+FT   source          1..10
+FT                   /organism="synthetic construct"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:32630"
+XX
+SQ   Sequence 10 AA; 00213384a6df2672fbeaf428e1a70e1e; MD5;
+//
+ID   NRP00000018; PRT; NR2; 1 SQ
+XX
+MF   27394902
+PN   WO0190149
+PR   US20000206139P 22-MAY-2000
+ED   29-NOV-2001 WO0190149 A2
+XX
+DR   EPOP:AX317942;
+DE   Sequence 43 from Patent WO0190149. 
+PN   WO0190149-A2/43, 29-NOV-2001
+XX
+FT   source          1..219
+FT                   /organism="Homo sapiens"
+FT                   /mol_type="protein"
+FT                   /db_xref="taxon:9606"
+XX
+SQ   Sequence 219 AA; 00215bc0b940dee283a9145a23b996a8; MD5;
+//

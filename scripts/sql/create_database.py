@@ -1,39 +1,25 @@
 import sqlite3
 
 
-sqlite_file = 'foobar.sqlite'    # name of the sqlite database file
-table_name1 = 'patent_table'  # name of the table to be created
-table_name2 = 'seq_table'  # name of the table to be created
-new_field1 = 'pat_id' # name of the column
-new_field2 = 'pat_title' # name of the column
-new_field3 = 'pat_desc' # name of the column
-new_field4 = 'embl_id' # name of the column
-
-text_type = 'TEXT'  # column data type
-int_type = 'INTEGER' 
-
-def init_database():
+def init_database(database_file):
     # Connecting to the database file
-    conn = sqlite3.connect(sqlite_file)
+    conn = sqlite3.connect(database_file)
     c = conn.cursor()
 
 
-    # creating tuple for string generation
-    t = (table_name1, new_field1, text_type, new_field2, text_type,
-         new_field3, text_type)
-    # Creating a new SQLite table with 1 column
-    c.execute('CREATE TABLE ? '
-              '(? ? PRIMARY KEY, ? ?, ? ?)', t)
+    # Creating the sequence table
+    c.execute('CREATE TABLE seq_table '
+              '(embl_id TEXT PRIMARY KEY, pat_id INTEGER, seq TEXT)')
 
-    # Creating a second table with 1 column and set it as PRIMARY KEY
-    # note that PRIMARY KEY column must consist of unique values!
-    t2 = (table_name2, new_field4, text_type,
-          new_field1, text_type)
-    c.execute('CREATE TABLE ? (? ? PRIMARY KEY, ? ?)', t2)
+    #creating the domain table
+    c.execute('CREATE TABLE domain_table '
+              '(domain_id INTEGER PRIMARY KEY, embl_id TEXT, pfam INTEGER)')
 
     # Committing changes and closing the connection to the database file
     conn.commit()
     conn.close()
 
 
-init_database()
+if __name__ == '__main__':
+    database_file = input('input path for database to create: ')
+    init_database(database_file)
