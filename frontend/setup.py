@@ -34,9 +34,9 @@ tests_require = [
 ]
 
 setup(
-    name='pyramid_wiki',
+    name='BinderFinder',
     version='0.0',
-    description='pyramid_wiki',
+    description='BinderFinder',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         'Programming Language :: Python',
@@ -57,10 +57,10 @@ setup(
     install_requires=requires,
     entry_points={
         'paste.app_factory': [
-            'main = pyramid_wiki:main',
+            'main = BinderFinder:main',
         ],
         'console_scripts': [
-            'initialize_pyramid_wiki_db = pyramid_wiki.scripts.initializedb:main',
+            'initialize_BinderFinder_db = BinderFinder.scripts.initializedb:main',
         ],
     },
 )

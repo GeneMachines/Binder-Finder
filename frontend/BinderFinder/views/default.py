@@ -13,8 +13,10 @@ from pyramid.httpexceptions import (
 
 from sqlalchemy.exc import DBAPIError
 
-from ..models import Search, Domain, Sequence
+from ..models import Search, SearchRecord, Domain, Sequence
 from ..forms import SearchCreateForm, SearchUpdateForm
+
+
 
 
 class HomeViews(object):
@@ -51,30 +53,32 @@ class SearchViews(object):
     def slug(self):
         return urlify(self.keywords)
 
-    @view_config(route_name='search', #match_param='action=create', 
+    @view_config(route_name='submit-search', match_param='action=create',
+             renderer='BinderFinder:templates/search.jinja2')
+    def submit_search(request):
+        entry = SearchRecord()
+        form = SearchCreateForm(request.POST)
+        if request.method == 'POST' and form.validate():
+            form.populate_obj(entry)
+            return HTTPFound(location=request.route_url('search', searchid=self.searchid))
+        return {'form': form, 'action': request.matchdict.get('action')}
+
+    @view_config(route_name='search',
                  renderer='../templates/search.jinja2')
     def search(self):
-#        # TODO #
-#        # redirect to error page saying that patentwise could be reached
-#        entry = SearchRecord()
-#        form = SearchCreateForm(request.POST)
-#        if request.method == 'POST' and form.validate():
-#            form.populate_obj(entry)
-#            # call patentview script
-#            response = search_patentview(entry.keywords, verbose=False)
-#            if response.status_code == requests.codes.ok:
-#                pass # populate database with results
-#            else:
-#                print ('error contacting patentwise server')
-#        return {'form': form, 'action': request.matchdict.get('action')}
+        keywords = self.keywords
+        pfamIDs = 
+        response = search_patentview(entry.keywords, verbose=False)
+        if response.status_code == requests.codes.ok:
+            #request.dbsession.add(response.json())
+            #results_url = self.request.route_url('results', slug=self.slug, searchid=self.searchid)
+            #return HTTPFound(results_url)
+            pass # populate database with results
+        else:
+            # redirect to a "server not found" page
+            print ('error contacting patentwise server')
 
-        page = {'name':'Search', 'creator':'Jake', 'data':'this is the search page'}
-        return dict(page=page)
 
-    @view_config(route_name='submit')
-    def submit_search(self):
-        results_url = self.request.route_url('results', slug=self.slug, searchid=self.searchid)
-        return HTTPFound(results_url)
 
 
 class ResultsViews(object):
