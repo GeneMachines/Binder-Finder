@@ -1,0 +1,22 @@
+{% extends 'layout.jinja2' %}
+
+{% block subtitle %}{{"Search results"}} - {% endblock subtitle %}
+
+{% block content %}
+<p>{{ content|safe }}</p>
+<p>
+<a href="{{request.route_url('search')}}">New Search</a>.
+</p>
+<p>
+    Viewing <strong>{{page.name}}</strong>, created by {{page.creator}}<strong>{{page.creator.name}}</strong>.
+    <p>
+    {% for entry in page.data %}
+       Title: {{entry.1}} {{entry.0}}
+       <p>Abstract: {{entry.2}}</p>
+    {% endfor %}
+    </p>
+</p>
+<p>You can return
+<a href="{{request.route_url('home')}}">Home</a>.
+</p>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends 'layout.jinja2' %}
+
+{% block subtitle %} Binderfinder- Home {% endblock subtitle %}
+
+{% block content %}
+<p>{{ content|safe }}</p>
+<p>
+<a href="{{request.route_url('search')}}">Search</a>.
+</p>
+<p>
+    Viewing <strong>{{page.name}}</strong>, created by {{page.creator}}<strong>{{page.creator.name}}</strong>.
+</p>
+<p>You can return
+<a href="{{request.route_url('home')}}">Home</a>.
+</p>
+{% endblock content %}
