@@ -17,10 +17,11 @@ from ..models import (
     )
 from ..models import (
     User, 
-    Search, 
+    Search,
     Domain, 
     Sequence,
     )
+from ..models.records import SearchRecord
 
 
 def usage(argv):
@@ -45,7 +46,7 @@ def main(argv=sys.argv):
 
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
-
+        
         for i in range(10):
             domain = Domain(domainID=i, pfamID=i, emblID='embl'+str(i))
             dbsession.add(domain)
@@ -53,4 +54,5 @@ def main(argv=sys.argv):
             dbsession.add(sequence)
             search = Search(patID=(i+5), title='foobar'+str(i), abstract='barfoo'+str(i))
             dbsession.add(search)
+            
         

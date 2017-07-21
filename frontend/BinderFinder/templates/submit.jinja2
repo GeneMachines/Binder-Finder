@@ -9,13 +9,17 @@
 
 {% block content %}
 <p>{{ content|safe }}</p>
-
 <p>
-<a href="{{request.route_url('search-submit', action='submit')}}">Search</a>.
-</p>
+<form action="{{request.route_url('search')}}" method="post" class ="form">
+      <p>{{ input('keywords', keys) }}</p>
+      <p>{{ input('pfams', pfamids) }}</p>
+        <div class="form-group">
+            <label></label>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
 
-<p>
-    Viewing <strong>{{page.name}}</strong>, created by {{page.creator}}<strong>{{page.creator.name}}</strong>.
+</form>
+
 </p>
 <p>You can return
 <a href="{{request.route_url('home')}}">Home</a>.

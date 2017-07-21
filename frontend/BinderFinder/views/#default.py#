@@ -110,8 +110,15 @@ class ResultsViews(object):
             pfams = entry.pfams.split(",")
             return entry.keywords, pfams
             
+        def create_and_pop_temp_search_table(request, response):
+            search_res = response.json()["patents"]
+            entry = Search(**search_res)
+
         keywords, pfams = retrieve_search(self.request)
         response = search_patentview(keywords)
+
+        
+
         results = query_and_filter_database(self.request, pfams=pfams).all()
         data = convert_results_to_display(results)
 

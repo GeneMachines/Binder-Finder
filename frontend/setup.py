@@ -9,8 +9,6 @@ with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
 
 requires = [
-    'wtforms',
-    'webhelpers2',
     'bcrypt',
     'shortuuid',
     'deform',
@@ -21,10 +19,13 @@ requires = [
     'pyramid_jinja2',
     'pyramid_retry',
     'pyramid_tm',
+    'requests',
     'SQLAlchemy',
     'transaction',
-    'zope.sqlalchemy',
     'waitress',
+    'wtforms',
+    'webhelpers2',
+    'zope.sqlalchemy',
 ]
 
 tests_require = [
