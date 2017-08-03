@@ -31,8 +31,6 @@ def create_temp_table(cursor, response):
     for patent in response.json()["patents"]: 
         if patent.values()[2].isdigit(): # makes sure patent ids are valid
             patent_table_pop(cursor, *patent.values())
-            if patent.values()[2] == "6423512":
-                print patent.values()[2]
         else:
             pass
 

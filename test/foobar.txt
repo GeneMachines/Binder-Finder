@@ -1,0 +1,1 @@
+awk {split($2, pfam, "."); split($3, id, ":"); print id[2] "," pfam[1] }

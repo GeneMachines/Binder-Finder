@@ -1,0 +1,65 @@
+import requests
+import pprint
+
+def build_query_string(query_string, num_results='10000'):
+    """
+    This function takes a search string and other search parameters as input and returns
+    the query url for the patent view REST API.
+    """
+
+    domain = 'http://www.patentsview.org/api/patents/'
+    query = 'query?q={"_text_any":{"patent_abstract":"%s"}}' % (query_string)
+    options = '&o={"page":1,"per_page":%s}' % (num_results)
+    form = '&f=["patent_number","patent_abstract","patent_title"]'
+
+    return (domain + query + options + form)
+
+
+def query_patentview(query_string, url, verbose=False):
+    """
+    Takes a query url and returns a list of patent results.
+    """
+    
+    response = requests.get(url) # query patent view
+
+    # number of hits
+    if verbose:
+        print ("Number of hits for '{}': ".format(query_string), response.json()['count'])
+
+    return response
+
+
+def search_patentview(query_string, verbose=False):
+    """
+    The main function of the search script. Takes a query string and returns a search response.
+    """
+
+    url = build_query_string(query_string)
+    response = query_patentview(query_string, url, verbose)
+    
+    return response
+
+
+def query_and_filter_database(request, pfams=[3,4,5,6]):
+    try:
+        query = request.dbsession.query(Search, Sequence.seq)
+        results = query.filter(
+            (Domain.emblID == Sequence.emblID)
+            & (Domain.pfamID.in_(pfams))
+            & (Sequence.patID == Search.patID)
+            )
+    except DBAPIError:
+        return Response(db_err_msg, content_type='text/plain', status=500)
+    return results
+
+def convert_results_to_display(results):
+    data = []
+    for res in list(results):
+        data.append((res.Search.title,
+                     res.Search.patID, res.Search.abstract))
+    return data
+
+if __name__ == "__main__":
+    query_string = "tnf"
+    response = search_patentview(query_string, True)
+    pprint(response.json()[0:3])

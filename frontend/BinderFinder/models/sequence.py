@@ -10,7 +10,8 @@ from .meta import Base
 
 class Sequence(Base):
     __tablename__ = 'sequence'
-    emblID = Column(String(25), primary_key=True)
+    seqID = Column(String(25), primary_key=True)
+    emblID = Column(String(25))
     patID = Column(Integer, nullable=False)
     seq = Column(String, nullable=False)
 

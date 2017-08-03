@@ -1,0 +1,10 @@
+
+
+def foobar(pfam_handle):
+    """
+    takes list of pfams and seqids and outputs tuple of ids
+    """
+
+    for i, line in enumerate(open(pfam_handle).readlines()):
+        line = line.split(',')
+        

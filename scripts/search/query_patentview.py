@@ -1,4 +1,5 @@
 import requests
+import pprint
 
 def build_query_string(query_string, num_results='10000'):
     """
@@ -23,7 +24,8 @@ def query_patentview(query_string, url, verbose=False):
 
     # number of hits
     if verbose:
-        print ("Number of hits for '{}': ".format(query_string), response.json()['count'])
+        print ("Number of hits for '{qs}': ".format(qs=query_string) + 
+               str(response.json()['count']))
 
     return response
 
@@ -41,4 +43,5 @@ def search_patentview(query_string, verbose=False):
 
 if __name__ == "__main__":
     query_string = "tnf"
-    response = search_patentview(query_string, True)
+    response = search_patentview(query_string, verbose=True)
+    pprint(response.json())

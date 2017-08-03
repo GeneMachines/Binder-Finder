@@ -1,6 +1,9 @@
 import os
 import sys
 import transaction
+import re
+
+from Bio import SeqIO
 
 from pyramid.paster import (
     get_appsettings,
@@ -23,13 +26,42 @@ from ..models import (
     )
 from ..models.records import SearchRecord
 
-
 def usage(argv):
     cmd = os.path.basename(argv[0])
     print('usage: %s <config_uri> [var=value]\n'
           '(example: "%s development.ini")' % (cmd, cmd))
     sys.exit(1)
 
+def domain_pop(dbsession, pfam_handle):
+    for i, line in enumerate(open(pfam_handle).readlines()):
+        emblid, pfamid = line.strip().split(',')
+        domain = Domain(domainID=i, pfamID=pfamid, emblID=emblid)
+        dbsession.add(domain)
+
+def pop_seq_table(dbsession, fasta_file):
+    """
+    Populates the sql database seq table with embl ids and sequences.
+    """
+    seqid = 0
+    for rec in SeqIO.parse(fasta_file, "fasta"): 
+        m = re.search("PN:US(\d+)", rec.description)
+
+        if m:
+            patid = m.group(1)
+            # ...extract the embl id
+            emblid = rec.id.split(":")[1].split("|")[0] 
+            seq = str(rec.seq)
+
+            try:
+                sequence = Sequence(seqID=seqid, emblID=emblid, 
+                                    patID=patid, seq=seq)
+                dbsession.add(sequence)
+                seqid += 1
+            except:
+                print(sys.exc_info()[0])
+        else:   
+            pass
+    return seqid
 
 def main(argv=sys.argv):
     if len(argv) < 2:
@@ -47,12 +79,6 @@ def main(argv=sys.argv):
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
         
-        for i in range(10):
-            domain = Domain(domainID=i, pfamID=i, emblID='embl'+str(i))
-            dbsession.add(domain)
-            sequence = Sequence(emblID='embl'+str(i+5), patID=i, seq='foobar'+str(i))
-            dbsession.add(sequence)
-            search = Search(patID=(i+5), title='foobar'+str(i), abstract='barfoo'+str(i))
-            dbsession.add(search)
-            
-        
+        domain_pop(dbsession, "../test/pfam_ids.csv")
+        pop_seq_table(dbsession, "../test/nrp_patent_003.fasta")
+

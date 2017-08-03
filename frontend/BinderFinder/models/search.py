@@ -18,3 +18,12 @@ class Search(Base):
     abstract = Column(String)
     creator = Column(Integer)
 
+class TempSearch(Base):
+    __tablename__ = 'temp'
+    __table_args__ = {'prefixes': ['TEMPORARY']}
+
+    patID = Column(Integer, primary_key=True)
+    title = Column(String, nullable=False)
+    abstract = Column(String)
+    creator = Column(Integer)
+
