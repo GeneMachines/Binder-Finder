@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     # do search
     # populate search table / select patents based on results
-    e# do join operations
+    # do join operations
     # return results
 
     conn.commit()

@@ -34,8 +34,8 @@ def populate_search_table(request, response, searchid):
         request.dbsession.add(entry)
 
 def pop_temp_search_table(request, response, searchid):
-    engine = sa.create_engine('sqlite:///test.sqlite')
-    TempSearch.__table__.create(engine)
+    print (dir(TempSearch))
+    TempSearch.__table__.create(request.dbsession.bind)
     for patent in response.json()['patents']:
         entry = TempSearch()
         entry.patID = patent['patent_number']
@@ -43,6 +43,10 @@ def pop_temp_search_table(request, response, searchid):
         entry.abstract = patent['patent_abstract']
         entry.creator = searchid
         request.dbsession.add(entry)
+
+    print ("###########1.5")
+    print(request.dbsession.query(TempSearch).filter(TempSearch.patID == 4636380).all())
+
 
 def query_and_filter_database(request, pfams=['PF07686',]):
     try:

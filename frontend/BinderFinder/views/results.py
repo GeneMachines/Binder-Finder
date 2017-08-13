@@ -15,6 +15,7 @@ from sqlalchemy.exc import DBAPIError
 
 from ..models import Search, Domain, Sequence
 from ..models.records import SearchRecord
+from ..models.search import TempSearch
 from ..forms import SearchCreateForm, SearchUpdateForm
 from ..services.record import SearchRecordService
 
@@ -50,14 +51,16 @@ class ResultsViews(object):
         response = search_patentview(keywords, verbose=True)
         # populates the search table with results
         print ("###########1")
-        pop_temp_search_table(self.request, response, self.searchid)
+        r = pop_temp_search_table(self.request, response, self.searchid)
+
         # filter results against domain information
         print ("###########2")
-        results = query_and_filter_database(self.request, pfams=pfams)
+        #results = query_and_filter_database(self.request, pfams=pfams)
         print ("###########3")
-        results = results.all()
+        #results = results.all()
         print ("###########4")
-        data = convert_results_to_display(results)
+        #data = convert_results_to_display(results)
+        data = None
         print ("###########5")
 
         if data:

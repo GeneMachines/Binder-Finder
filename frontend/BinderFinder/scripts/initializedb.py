@@ -32,36 +32,61 @@ def usage(argv):
           '(example: "%s development.ini")' % (cmd, cmd))
     sys.exit(1)
 
-def domain_pop(dbsession, pfam_handle):
-    for i, line in enumerate(open(pfam_handle).readlines()):
-        emblid, pfamid = line.strip().split(',')
-        domain = Domain(domainID=i, pfamID=pfamid, emblID=emblid)
-        dbsession.add(domain)
+def pop_domain_table(dbsession, pfam_handle, counter):
 
-def pop_seq_table(dbsession, fasta_file):
+    with open(pfam_handle) as p_handle:
+        domains = [] # list for objects to be added
+        for line in p_handle.readlines():
+            if (counter % 5000) == 0: # commit every 5000 objects to avoid memory overload
+                dbsession.add_all(domains)
+                transaction.commit() # commit adds
+                dbsession.expunge_all() # clear memory
+                domains = []
+            emblid, pfamid = line.strip().split('\t') # parse tab delimited values
+            pfamid = pfamid.split('.')[0][2:] # remove pfam subclassification and the superfluous "PF"
+            domains.append(Domain(domainID=counter, pfamID=pfamid, emblID=emblid))
+            counter += 1
+
+    dbsession.add_all(domains) # add the final batch
+    transaction.commit() # commit...
+    dbsession.expunge_all() # clear memory
+
+    print ('Added {} entries to the domain table'.format(counter))
+
+
+def pop_seq_table(dbsession, fasta_file, seqid):
     """
     Populates the sql database seq table with embl ids and sequences.
     """
-    seqid = 0
+
+    records = []
     for rec in SeqIO.parse(fasta_file, "fasta"): 
-        m = re.search("PN:US(\d+)", rec.description)
-
-        if m:
-            patid = m.group(1)
-            # ...extract the embl id
-            emblid = rec.id.split(":")[1].split("|")[0] 
+        m = re.search("PN:US(\d+)", rec.description) # match patent regex in the sequence header
+        if m: # if there is a US based patent id...
+            patid = m.group(1) # ...extract the embl id
+            emblid = rec.id.split(":")[1].split("|")[0] # extract the emblid
             seq = str(rec.seq)
-
             try:
                 sequence = Sequence(seqID=seqid, emblID=emblid, 
                                     patID=patid, seq=seq)
-                dbsession.add(sequence)
+                records.append(sequence)
                 seqid += 1
             except:
                 print(sys.exc_info()[0])
-        else:   
-            pass
-    return seqid
+        else: 
+            pass # skip if there isn't a US based patent number
+        
+        if (seqid % 5000) == 0: # commit every 5000 sequences
+            dbsession.add_all(records)
+            transaction.commit()
+            dbsession.expunge_all()
+            records = []
+
+        dbsession.add_all(records)
+        transaction.commit()
+        dbsession.expunge_all()
+        records = []
+
 
 def main(argv=sys.argv):
     if len(argv) < 2:
@@ -74,11 +99,25 @@ def main(argv=sys.argv):
     engine = get_engine(settings)
     Base.metadata.create_all(engine)
 
+
     session_factory = get_session_factory(engine)
+
+    update_domain_table = False # change to True in order to add more domain-pfam entries
+    update_sequence_table = False # change to True in order to add more sequence-emblid entries
 
     with transaction.manager:
         dbsession = get_tm_session(session_factory, transaction.manager)
         
-        domain_pop(dbsession, "../test/pfam_ids.csv")
-        pop_seq_table(dbsession, "../test/nrp_patent_003.fasta")
+        ## todo ## 
+        # use config file to put all hard-coded files in one place
+        if update_domain_table:
+            d_handle = '' # put in filename to update
+            counter = 0 # set to largest existing id to avoid unique clash, 0 for building new
+            pop_domain_table(dbsession, d_handle, counter)
+
+
+        if update_sequence_table:
+            d_handle = '' # put in filename to update
+            counter = 0 # set to largest existing id to avoid unique clash, 0 for building new
+            pop_seq_table(dbsession, file, counter)
 

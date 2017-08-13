@@ -8,12 +8,30 @@ def init_database(database_file):
 
 
     # Creating the sequence table
-    c.execute('CREATE TABLE seq_table '
-              '(embl_id TEXT PRIMARY KEY, pat_id INTEGER, seq TEXT)')
+    c.execute('CREATE TABLE sequence ('
+              '"seqID" VARCHAR(25) NOT NULL, '
+              '"emblID" VARCHAR(25), '
+              '"patID" INTEGER NOT NULL, '
+              'seq VARCHAR NOT NULL, '
+              'CONSTRAINT pk_sequence PRIMARY KEY ("seqID"))'
+              )
+
 
     #creating the domain table
-    c.execute('CREATE TABLE domain_table '
-              '(domain_id INTEGER PRIMARY KEY, embl_id TEXT, pfam INTEGER)')
+    c.execute('CREATE TABLE domain ('
+              '"domainID" INTEGER NOT NULL, '
+              '"pfamID" INTEGER, '
+              '"emblID" VARCHAR(25) NOT NULL, '
+              'CONSTRAINT pk_domain PRIMARY KEY ("domainID"))'
+              )
+
+    #creating the domain table
+    c.execute('CREATE TABLE searches ('
+              'id VARCHAR(50) NOT NULL, '
+              'keywords VARCHAR(255) NOT NULL, '
+              'pfams VARCHAR(255) NOT NULL, '
+              'CONSTRAINT pk_searches PRIMARY KEY (id))'
+              )
 
     # Committing changes and closing the connection to the database file
     conn.commit()
