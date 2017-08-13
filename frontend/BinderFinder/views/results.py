@@ -40,9 +40,14 @@ class ResultsViews(object):
     def view_results(self):
         def convert_results_to_display(results):
             data = []
-            for res in list(results):
-                data.append((res.Search.title, 
-                             'US'+str(res.Search.patID), res.Search.abstract))
+            if len(results) == 0:
+                return None
+            for res in results:
+                print('#####')
+                print(res.patent_title)
+                data.append((res.patent_title, 
+                             'US'+str(res.patent_number), 
+                             res.patent_abstract))
             return data
         
         # gets search parameters from webform
@@ -50,29 +55,22 @@ class ResultsViews(object):
         # submits search to patentview
         response = search_patentview(keywords, verbose=True)
         # populates the search table with results
-        print ("###########1")
         r = pop_temp_search_table(self.request, response, self.searchid)
 
         # filter results against domain information
-        print ("###########2")
-        #results = query_and_filter_database(self.request, pfams=pfams)
-        print ("###########3")
-        #results = results.all()
-        print ("###########4")
-        #data = convert_results_to_display(results)
-        data = None
-        print ("###########5")
+        results = query_and_filter_database(self.request, pfams=pfams)
+        results = results.all()
+        print (results)
+        data = convert_results_to_display(results)
 
         if data:
             page = {'name':'Results', 'creator':'Jake', 'data':data}
         else:
         # TODO change this so it redirects to a standard "no results" page 
-            data = [('Jake', 'Parker', 
-                     'Is a computational biologist, not a web dev')]
+            data = [('', '', 
+                     'There are no results for these search terms. Please try again.')]
             page = {'name':'Results', 'creator':'Jake', 'data':data}
         
-        #print (dir(self.request.dbsession))
-        #Search.__table__.drop(self.request.dbsession.engine())
 
         return dict(page=page)
 

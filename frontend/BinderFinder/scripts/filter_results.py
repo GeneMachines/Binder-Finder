@@ -1,3 +1,5 @@
+import transaction
+
 import colander
 import deform.widget
 
@@ -19,42 +21,40 @@ def retrieve_search(request):
     """
     get search terms using id
     """
-    searchid = request.matchdict.get('searchid')
-    entry = SearchRecordService.by_id(searchid, request)
-    pfams = entry.pfams.split(",")
+    searchid = request.matchdict.get('searchid') # get the unique search id from the URL.
+    entry = SearchRecordService.by_id(searchid, request) # retrieve the search using the searchid
+    pfams = [int(pf[2:]) for pf in entry.pfams.split(",")] # extract the list of pfams
     return entry.keywords, pfams
 
-def populate_search_table(request, response, searchid):
-    for patent in response.json()['patents']:
-        entry = Search()
-        entry.patID = patent['patent_number']
-        entry.title = patent['patent_title']
-        entry.abstract = patent['patent_abstract']
-        entry.creator = searchid
-        request.dbsession.add(entry)
 
 def pop_temp_search_table(request, response, searchid):
-    print (dir(TempSearch))
-    TempSearch.__table__.create(request.dbsession.bind)
-    for patent in response.json()['patents']:
-        entry = TempSearch()
-        entry.patID = patent['patent_number']
-        entry.title = patent['patent_title']
-        entry.abstract = patent['patent_abstract']
-        entry.creator = searchid
-        request.dbsession.add(entry)
+    # This should work when creating a temporary table:
+    #TempSearch.__table__.create(request.dbsession.bind)
+    # but it does not and I don't know why : / 
+    # Instead I've just executed the text statement. Hacky but it works. 
 
-    print ("###########1.5")
-    print(request.dbsession.query(TempSearch).filter(TempSearch.patID == 4636380).all())
+    request.dbsession.execute(
+            'CREATE TEMPORARY TABLE temp_search ('
+            'patent_number VARCHAR NOT NULL, '
+            'patent_title VARCHAR NOT NULL, '
+            'patent_abstract VARCHAR, '
+            'CONSTRAINT pk_temp_search PRIMARY KEY (patent_number)'
+            ')'
+            )
+    patents = [TempSearch(**entry) for entry in response.json()['patents']] # build list of objects to add
+    request.dbsession.add_all(patents) # add search results to the temp table
+    transaction.commit() # commit changes
+
+    print('Number of search results added: '.format(request.dbsession.query(TempSearch).count()))
 
 
-def query_and_filter_database(request, pfams=['PF07686',]):
+def query_and_filter_database(request, pfams=list('07686')):
     try:
-        query = request.dbsession.query(Search, Sequence.seq)
+        query = request.dbsession.query(TempSearch)
         results = query.filter(
             (Domain.emblID == Sequence.emblID)
             & (Domain.pfamID.in_(pfams))
-            & (Sequence.patID == Search.patID)
+            & (Sequence.patID == TempSearch.patent_number)
             )
     except DBAPIError:
         return Response(db_err_msg, content_type='text/plain', status=500)

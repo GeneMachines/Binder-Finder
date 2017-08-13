@@ -66,9 +66,13 @@ class SearchViews(object):
             entry.id = uuid
             entry.keywords = keywords
             # extract the pfams from the web form
-            entry.pfams = form.data['pfams']
-            # populate the database entry
-            self.request.dbsession.add(entry)
+            if form.data['pfams']:
+                entry.pfams = form.data['pfams']
+            ## todo ##
+            # change the default to all pfam domains?
+            else:
+                entry.pfams = 'PF07868' # default pfam is the v-set
+            self.request.dbsession.add(entry) # populate the database entry
             return HTTPFound(location=self.request.route_url('results',
                                                              slug=urlify(keywords), 
                                                              searchid=uuid))
