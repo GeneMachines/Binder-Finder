@@ -35,6 +35,13 @@ class ResultsViews(object):
         searchid = self.request.matchdict['searchid']
         return searchid
 
+
+    @view_config(route_name='no-results',
+                 renderer='../templates/no_results.jinja2')
+    def view_no_results(self):
+        return dict()
+
+
     @view_config(route_name='results',
                  renderer='../templates/results.jinja2')
     def view_results(self):
@@ -60,17 +67,20 @@ class ResultsViews(object):
         # filter results against domain information
         results = query_and_filter_database(self.request, pfams=pfams)
         results = results.all()
-        print (results)
         data = convert_results_to_display(results)
 
         if data:
             page = {'name':'Results', 'creator':'Jake', 'data':data}
         else:
+
         # TODO change this so it redirects to a standard "no results" page 
             data = [('', '', 
                      'There are no results for these search terms. Please try again.')]
             page = {'name':'Results', 'creator':'Jake', 'data':data}
-        
+            return HTTPFound(location=self.request.route_url('no-results',
+                                                             searchid=self.searchid,
+                                                             slug=urlify(keywords))
+                        )
 
         return dict(page=page)
 

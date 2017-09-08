@@ -46,8 +46,8 @@ class SearchViews(object):
     @view_config(route_name='search-page', renderer='string')
     def search(self):
        return HTTPFound(location=self.request.route_url('search-submit',
-                                                         searchid=self.searchid)\
-)
+                                                         searchid=self.searchid)
+                        )
 
     @view_config(route_name='search',
                  renderer='../templates/submit.jinja2')
@@ -68,8 +68,6 @@ class SearchViews(object):
             # extract the pfams from the web form
             if form.data['pfams']:
                 entry.pfams = form.data['pfams']
-            ## todo ##
-            # change the default to all pfam domains?
             else:
                 entry.pfams = 'PF07868' # default pfam is the v-set
             self.request.dbsession.add(entry) # populate the database entry

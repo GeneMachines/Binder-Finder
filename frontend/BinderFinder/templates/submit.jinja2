@@ -1,3 +1,4 @@
+<!doctype jinja2>
 {% extends 'layout.jinja2' %}
 
 {% macro input(name, value='', type='text', size=20) -%}
@@ -11,12 +12,16 @@
 <p>{{ content|safe }}</p>
 <p>
 <form action="{{request.route_url('search')}}" method="post" class ="form">
-      <p>{{ input('keywords', keys) }}</p>
-      <p>{{ input('pfams', pfamids) }}</p>
-        <div class="form-group">
+      Input keywords to search against the patent database:
+      <p>{{ input('keywords', keys) }}</p> 
+      Input a comma separated list of Pfam ids to filter by: 
+      (by default antibody v-set domain, PF07686):
+      <p>{{ input('pfams', pfamids) }}</p> 
+            <div class="form-group">
             <label></label>
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
+You can find Pfam ids by searching the <a href="http://pfam.xfam.org/">Pfam website</a> using a keyword search.
 
 </form>
 
@@ -25,3 +30,4 @@
 <a href="{{request.route_url('home')}}">Home</a>.
 </p>
 {% endblock content %}
+

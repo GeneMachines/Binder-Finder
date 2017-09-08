@@ -1,0 +1,16 @@
+{% extends 'layout.jinja2' %}
+
+{% block subtitle %}{{"Search results"}} - No results found {% endblock subtitle %}
+
+{% block content %}
+<p>{{ content|safe }}</p>
+<p>
+<a href="{{request.route_url('search')}}">New Search</a>.
+</p>
+<p>
+	There are no results for these search terms.
+</p>
+<p>You can return
+<a href="{{request.route_url('home')}}">Home</a>.
+</p>
+{% endblock content %}
