@@ -5,10 +5,12 @@
 Download the latest standard Python 3.3+ release (not development release) from [python.org](https://www.python.org/downloads/).
 
 ## Create directory in which to install BinderFinder  
-`mkdir ~/path/to/dir/BinderFinder`
+`mkdir ~/path/to/dir/BinderFinder`  
+and move into that directory  
+`cd ~/path/to/dir/BinderFinder`  
 
 ## Get project
-Clone this repo into the folder using  
+Clone this repo into the directory using  
 `git clone https://github.com/GeneMachines/Binder-Finder`  
 Alternatively, download this repo and unzip into your directory.
 
