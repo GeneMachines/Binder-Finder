@@ -16,7 +16,7 @@ Alternatively, download this repo and unzip into your directory.
 
 ## Create a virtual environment
 Using [virtualenv](https://virtualenv.pypa.io/en/stable/) set up a virtual environment in our project.  
-`virtualenv ~/path/to/BinderFinder`
+`venv ~/path/to/BinderFinder`
 
 We set an environment variable to save typing later.  
 `export VENV=~/path/to/BinderFinder/env`
