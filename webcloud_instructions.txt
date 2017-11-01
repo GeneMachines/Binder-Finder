@@ -1,0 +1,72 @@
+as you don't have an account on EAIT infrastructure you'll have to install and use the client tools on your own machine because you don't have access to our shell servers. you'll need to install node and npm, and with npm install smartc, and maybe triton, manta, and json.
+
+once theyre installed set the following environment variables:
+
+SDC_URL=https://cloudapi.gps-1.uqcloud.net/
+SDC_ACCOUNT=uqjpar17
+SDC_KEY_ID=set to the fingerprint of your ssh key as per ssh-keygen -l -E md5 -f path/to/id_rsa.
+
+MANTA_URL=https://stluc.manta.uqcloud.net
+MANTA_USER=$SDC_ACCOUNT
+MANTA_KEY_ID=$SDC_KEY_ID
+
+eg, i have the following in .bash_profile:
+
+export SDC_URL=https://cloudapi.gps-1.uqcloud.net/
+export SDC_ACCOUNT=uqdgwynn
+export SDC_KEY_ID=c5:24:de:75:d1:fc:29:57:66:d4:c6:a6:4d:28:10:78
+
+export MANTA_URL=https://stluc.manta.uqcloud.net
+export MANTA_USER=uqdgwynn
+export MANTA_KEY_ID=c5:24:de:75:d1:fc:29:57:66:d4:c6:a6:4d:28:10:78
+
+and the following:
+
+dlg@opiate ~$ npm -g ls --depth 0
+/Users/dlg/.local/node/lib
+ json@9.0.6
+ ldapjs@1.0.1
+ manta@5.1.0
+ smartdc@8.1.0
+ triton@5.4.0
+
+which lets me do this:
+
+dlg@opiate ~$ sdc-listpackages | json -a id name
+8d66f5bc-8b4d-617a-8ed9-c6e50ed15743 large
+2c9d7aa9-a10f-43b3-c7e8-c576ae0808e3 huge
+3e167aab-6e42-cb93-c293-a3c1dfb52e9d standard
+de6fa7c7-1b88-4aeb-ba44-9920c54c9de2 small
+7243e315-3b3e-41d5-aebe-938ca44d26d2 huge-2G
+188b16b5-6685-e46e-f023-be9836a8bc67 huge-4G
+2b95610c-48be-e7cb-f759-c084c3a69f90 sample-docker
+dlg@opiate ~$ sdc-listimages | json -a name | sort | uniq
+alpine-3
+base
+base-32
+base-32-lts
+base-64
+base-64-lts
+base-multiarch
+centos-6
+centos-7
+debian-7
+debian-8
+elasticsearch
+hadoop
+java
+minimal-32
+minimal-32-lts
+minimal-64
+minimal-64-lts
+mongodb
+percona
+percona-cluster
+pkgbuild
+postgresql
+ubuntu-14.04
+ubuntu-16.04
+uq-ubuntu
+webproject
+
+and so on. 
