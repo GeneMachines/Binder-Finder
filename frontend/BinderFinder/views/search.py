@@ -69,7 +69,7 @@ class SearchViews(object):
             if form.data['pfams']:
                 entry.pfams = form.data['pfams']
             else:
-                entry.pfams = 'PF07868' # default pfam is the v-set
+                entry.pfams = 'PF07686' # default pfam is the v-set
             self.request.dbsession.add(entry) # populate the database entry
             return HTTPFound(location=self.request.route_url('results',
                                                              slug=urlify(keywords), 
